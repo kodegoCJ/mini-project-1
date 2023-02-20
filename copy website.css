@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@500&family=Jost:ital@1&family=Roboto+Slab:wght@400;500&display=swap');
+
+:root{
+  --primary-color: rgb(20, 219, 20);
+  --accent-color:rgb(13, 173, 13);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Cedarville Cursive', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Jost', sans-serif;
+font-family: 'Roboto Slab', serif;;
+scroll-behavior: smooth;
+}
+/* NavBar */
+.nav-item a{
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-right: 15px;
+}
+
+
+.navbar-brand img{
+  width: 150px;
+}
+.search{
+  height: 45px;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  background-color: transparent;
+  border-radius: 20px 0px 0px 20px;
+
+}
+.btn1{
+  height: 45px;
+  outline: none;
+  border:none;
+  background-color:var(--primary-color);
+  color: white;
+  border-radius: 0px 20px 20px 0px;
+  transition: all 0.4s;
+  margin-inline-end: 2px;
+}
+
+.btn1:hover{
+  opacity: 0.8;
+  color: white;
+  border: 4px solid rgb(12, 79, 37);
+}
+
+.bi-cart3{
+font-size: 30px;
+color: black;
+cursor: pointer;
+padding-top: 5px;
+transition: all 0.4s;
+}
+.bi-cart3:hover{
+color: var(--accent-color);
+}
+.navbar-toggler{
+  font-size: 20px;
+  color: black;
+}
+.navbar-toggler:focus{
+  outline: none;
+  box-shadow: none;
+}
+/* main */
+.main{
+  background: url(/main/m1.jpg)no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.main h1{
+  font-size: 5rem;
+}
+.main p:nth-child(1){
+ font-size: 10px;
+ font-weight: 500;
+}
+.main p:nth-child(2){
+  font-size: 18px;
+  color: gray;
+}
+.mbtn1{
+  height: 50px;
+  width: 25%;
+  outline: none;
+  border: none;
+  color: white;
+  background:var(--primary-color);
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+.mbtn1 a{
+  text-decoration: none;
+  color:white;
+}
+
+.mbtn1:hover{
+  opacity: 0.8;
+  color: white;
+  border: 4px solid rgb(12, 79, 37);
+}
+.mbtn2{
+  height: 50px;
+  width: 25%;
+  outline: none;
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 50px;
+  transition: all0.4s;
+}
+.mbtn2:hover{
+  opacity: 0.8;
+  color: white;
+  border: 4px solid rgb(12, 79, 37);
+}
+
+.mbtn2 a{
+  text-decoration: none;
+  color:rgb(12, 79, 37);
+}
+
+.line{
+  height: 6px;
+  width: 100px;
+  background: var(--primary-color);
+  display: inline-block;
+}
+/* about */
+.about{
+background:url(main/grocery-store-asian-delivery-man-holding-food-basket-on-blur-white-banner-background.png)no-repeat;
+background-size: cover;
+height: 90vh;
+width:100% ;
+
+}
+.about h1{
+  font-size: 3rem;
+  font-weight: 400;
+}
+.about p:nth-child(1){
+ font-size: 10px;
+ font-weight: 500;
+}
+.about p:nth-child(2){
+  font-size: 18px;
+  color: gray;
+}
+/* welcome */
+.welcome{
+  background-color: var(--accent-color)
+}
+
+.line2{
+  height: 6px;
+  width: 30%;
+  background-color: white;
+  display:inline-block;
+}
+.welcome h2{
+font-size: 5rem;
+font-weight: 400;
+}
+
+.welcome .card{
+  border:none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.welcome i{
+font-size: 45px;
+color:var(--primary-color)
+}
+.welcome h1{
+  font-weight: lighter;
+  padding:10px 0px ;
+}
+/* product */
+.product h2{
+  font-weight: 700;
+}
+.product h6{
+  color: red;
+}
+.btn3{
+  height: 45px;
+  width: 35%;
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 700;
+  border-radius: 60px;
+}
+
+.btn3 a{
+  text-decoration: none;
+  color:white;
+}
+.btn3:hover{
+  opacity: 0.8;
+  color: white;
+  border: 4px solid rgb(12, 79, 37);
+}
+
+.pcard:hover{
+  box-shadow: -3px -1px 24px -5px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -3px -1px 24px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: -3px -1px 24px -5px rgba(0,0,0,0.75);
+  transition: 0.5s; 
+}
+
+/* discount */
+.discount{
+  background:var(--accent-color);
+  color: white;
+  height: 25vh;
+}
+.dbtn{
+  height: 50px;
+  width: 75%;
+  outline: none;
+  border: none;
+  color: black;
+  background-color: white;
+  border-radius: 50px;
+  margin: 0 auto;
+  display: block;
+  font-weight: lighter;
+  transition: all 0.4s;
+}
+.dbtn a{
+  text-decoration: none;
+  color:rgb(12, 79, 37);
+}
+
+.dbtn:hover{
+  opacity: 0.8;
+  color: white;
+  border: 4px solid rgb(12, 79, 37);
+}
+
+
+/* shop */
+.shop h2{
+  font-weight: 700;
+}
+
+.shop h6{
+    color: red;
+}
+/* store */
+.store h2{
+  font-size: 3rem;
+  font-weight: bold;
+}
+.store p:nth-child(1){
+ font-size: 10px;
+ font-weight: 500;
+}
+.store p:nth-child(2){
+  font-size: 18px;
+  color: gray;
+}
+
+.store i{
+  font-size: 45px;
+  align-items:center;
+}
+
+.store .card{
+  border-radius: 0;
+  border: none;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.store .card:hover{
+  background-color:var(--primary-color);
+  color: white;
+
+}
+.store .card:hover .per1{
+  color: white;
+}
+.store  a {
+  text-decoration: none;
+  color: black;
+}
+
+/* section 2 */
+.apple{
+  background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(/main/portrait-of-beautiful-young-woman-with-green-apple-isolated-on-white-background-blank-copy.png)no-repeat;
+background-size: cover;
+height: 80vh;
+width: 100%;
+}
+
+.sbtn1{
+  height: 50px;
+  width: 35%;
+  outline: none;
+  border: none;
+  color: black;
+  background-color:var(--accent-color);
+  border-radius: 50px;
+  margin: 0 auto;
+  display: block;
+  font-weight: lighter;
+  transition: all 0.4s;
+}
+.sbtn1 a{
+  text-decoration: none;
+  color:white;
+}
+.sbtn1:hover{
+  opacity: 0.8;
+  color: white;
+  border: 4px solid rgb(12, 79, 37);
+}
+/* Contact us */
+.contact h1{
+  color: #000;
+  font-weight: 600;
+  font-size: 45px;
+}
+.cbtn1{
+    height: 50px;
+    width: 35%;
+    outline: none;
+    border: none;
+    color: white;
+    background-color:var(--accent-color);
+    border-radius: 50px;
+    margin: 0 auto;
+    display: block;
+    font-weight: lighter;
+    transition: all 0.4s;
+  }
+.cbtn1:hover{
+    opacity: 0.8;
+    color: white;
+    border: 4px solid rgb(12, 79, 37);
+  }
+  /* footer */
+  .news{
+    background-color:rgb(12, 79, 37);
+    color: whitesmoke;
+  }
+  .hbtn{
+    height: 45px;
+    width: 100px;
+    background: white;
+    margin-left: -10px;
+    border:  2px solid white;
+    font-weight: 600;  
+  }
+  .news input{
+    height: 45px;
+    width: 55%;
+    border: 2px solid white;
+    outline: none;
+    background:rgb(12, 79, 37);
+    color: white;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  .news::placeholder{
+    color: white;
+  }
+  .news p{
+    margin: 0;
+  }
+  .fa-brands{
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding-right:5px;
+  }
