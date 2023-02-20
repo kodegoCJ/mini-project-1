@@ -301,7 +301,7 @@ color:var(--primary-color)
 
 /* section 2 */
 .apple{
-  background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(/main/portrait-of-beautiful-young-woman-with-green-apple-isolated-on-white-background-blank-copy.png)no-repeat;
+  background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('./main/portrait-of-beautiful-young-woman-with-green-apple-isolated-on-white-background-blank-copy.png')no-repeat;
 background-size: cover;
 height: 80vh;
 width: 100%;
