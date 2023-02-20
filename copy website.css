@@ -63,6 +63,19 @@ transition: all 0.4s;
 .bi-cart3:hover{
 color: var(--accent-color);
 }
+
+.bi-person-circle{
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+  padding-top: 5px;
+  transition: all 0.4s;
+  margin-left:20px;
+  }
+  .bi-person-circle:hover{
+  color: var(--accent-color);
+}
+
 .navbar-toggler{
   font-size: 20px;
   color: black;

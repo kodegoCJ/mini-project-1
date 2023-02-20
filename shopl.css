@@ -80,6 +80,14 @@ color: var(--accent-color);
   width: 100% ;
 }
 
+/* product */
+.pcard:hover{
+  box-shadow: -3px -1px 24px -5px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -3px -1px 24px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: -3px -1px 24px -5px rgba(0,0,0,0.75);
+  transition: 0.5s; 
+  cursor: pointer;
+}
 
 
 
