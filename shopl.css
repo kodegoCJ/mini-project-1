@@ -73,7 +73,7 @@ color: var(--accent-color);
 }
 
 /* sidebar */
-.accordion-body .dropdown-menu{
+.accordion-body,.dropdown-menu{
   width: 100%;
 }
 .category-row{
