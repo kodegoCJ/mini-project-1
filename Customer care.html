@@ -4,9 +4,328 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- icons CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+   <!-- CSS -->
+   <link rel="stylesheet" href="copy website.css">
+          <!-- fontawesome -->
+          <script src="https://kit.fontawesome.com/3733990f22.js" crossorigin="anonymous"></script>
+  <title>Customer Care</title>
 </head>
 <body>
-  <H1> welcomer to ninja services </H1>
+  <!--Start NavBar -->
+<nav class="navbar navbar-expand-lg pb-3">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="./main/charlz2.png" class="img-fluid" alt="ninja logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fa-solid fa-burger"></i></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="promos.html">Promos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="shop.html">
+            shop
+          </a>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Membership.html">Rewards</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="px-2 search" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn1 me-2 px-3" type="submit">Search</button>
+        <span><i class="bi bi-cart3"></i></span>
+        <span><a href="Sign up page.html"><i class="bi bi-person-circle"></i></a></span>
+
+        </form>
+    </div>
+  </div>
+</nav>
+<!-- End NavBar -->
+
+
+
+<div class="container">
+  <form class="form-control p-4 bg-secondary text- bg-opacity-25 needs-validation" novalidate>
+    <!--Header---->
+      <h1 class="text-center">Registration</h1>
+      <hr>
+      <p class="p-2">Thank you for interest in working with us. Please check below 
+          for available job opportunities that meet your criteria and send 
+          your application by filing out the Application Form.
+      </p>
+<!--Text Inputs---->
+      <div class="row">
+          <div class="col">
+              <label for="fname" class="form-label fw-bold">First</label>
+              <input type="text" class="form-control" id="fname" name="name" placeholder="" required>
+              <div class="invalid-feedback">
+                  Please enter your name
+              </div>
+          </div>
+          <div class="col">
+            <label for="fname" class="form-label fw-bold">M.I.</label>
+            <input type="text" class="form-control" id="fname" name="name" placeholder="" required>
+            <br>
+            <div class="invalid-feedback">
+                Please enter Middle Initial 
+            </div>
+        </div>
+          <div class="col">
+              <label for="lname" class="form-label fw-bold">Last</label><br>
+              <input type="text" class="form-control" id="lname" name="name" placeholder="" required>
+              <div class="invalid-feedback">
+                  Please enter your last
+              </div>
+          </div>
+      </div> 
+      <div class="row">
+          <div class="col input-area">
+              <label for="email" class="form-label fw-bold">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+              <div class="invalid-feedback">
+                  Please enter your email
+              </div>
+          </div>
+      </div>
+<!--select menu ---->
+      <div class="row">
+          <div class="col">
+              <label for="validation"  class="form-label fw-bold">What position are you applying for?</label>
+              <select class="form-select is -invalid" id="validationserver04" aria-describedby="validationServer04Feedback" required>
+                  <option selected disabled value="">- Select -</option>
+                  <option>Software Engineer</option>
+                  <option>Frontend Developer</option>
+                  <option>Backend Developer</option>
+                  <option>Graphic Designer</option>
+                  <option>PHP Developer</option>
+              </select>
+              <div id="validationServer04Feedback" class="invalid-feedback">
+                Please select a valid position.
+              </div>
+              
+          </div>
+
+          <div class="col">
+              <label for="validation" class="form-label fw-bold">Available date</label>
+              
+              <select class="form-select -invalid" id="validationserver04" aria-describedby="validationServer04Feedback" required>
+                  <option selected disabled value="">- Select -</option>
+                  <option>February 13 2023</option>
+                  <option>February 20 2023</option>
+                  <option>February 20 2023</option>
+                  <option>February 27 2023</option>
+              </select>
+
+              <div class="invalid-feedback">
+                select date
+            </div>
+          </div>
+
+          <div class="col-md-2">
+            <label for="validation" class="form-label fw-bold">Available date</label>
+            <br>
+           <input type="time" class="form-check-inline -invalid" id="validationserver04" aria-describedby="validationServer04Feedback" required  >
+            <div class="invalid-feedback">
+              select time
+          </div>
+
+
+
+
+      </div>
+<!---Radio --->
+      <div class="row">
+          <label for="" class="form-label pt-3 fw-bold">What is your current employee status?</label>
+
+          <div class="col">
+              <input type="radio" id="validationFormCheck1" name="Male" value="Male" class="form-check-input" required>
+              <label for="validationFormCheck1" class="form-label" requ>Employed</label>
+              <div class="invalid-feedback">please select one </div>
+          </div>
+
+          <div class="col">
+              <input type="radio" id="validationFormCheck2" name="Male" class="form-check-input"required>
+              <label for="validationFormCheck2" class="form-label">Self-Employed</label>
+              <div class="invalid-feedback"></div>
+          </div>
+
+          <div class="row">
+              <div class="col">
+                  <input type="radio" id="validationFormCheck3" name="Male" value="Male" class="form-check-input" required>
+                  <label for="validationFormCheck3" class="form-label">Unemployed</label>
+                  <div class="invalid-feedback"></div>
+              </div>
+
+              <div class="col">
+                  <input type="radio" id="validationFormCheck4" name="Male" class="form-check-input" required>
+                  <label for="validationFormCheck4" class="form-label">Student</label>
+                  <div class="invalid-feedback"></div>
+              </div>
+          </div>
+      </div>
+<!---resume links--->        
+      <div class="row">
+          <div class="col">
+              <label for="validationlink" class="form-label fw-bold">Please provide resume link</label><br>
+              <input type="text" name="link" id="validationlink" class="form-control" placeholder="https://www.example.com" required>
+              <div class="invalid-feedback">
+                  please put your url
+              </div>
+          </div>
+
+          <div class="col">
+              <label for="" class="form-label fw-bold">Please provide resume link</label><br>
+              <input type="file" aria-label="file example" class="form-control" placeholder="Resume"required>
+              <div class="invalid-feedback">Please selec a valid form file </div>
+          </div>
+      </div>
+
+      <br>
+<!---references-->
+      <div class="row">
+          <label for="" class="form-label fw-bold">Do you have references? (optional)</label>
+          <div class="col">
+            <br>
+              <input type="text" name="fname" id="fsname" class="form-control" placeholder="First" required>
+              
+              <div class="invalid-feedback">
+                  Please Enter your name
+              </div>
+          </div>
+          <div class="col"><br>
+              <input type="text" class="form-control" name="lsname" id="lname" placeholder="Last" required>
+              <div class="invalid-feedback">
+                  Please Enter your last
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col">
+              <label for="email" class="form-label fw-bold"></label>
+              <input type="email" id="emails" class="form-control" placeholder="Reference email" required>
+              <div class="invalid-feedback">
+                  Please enter your email
+              </div>
+          </div>
+      </div>
+<br>
+      <div class="row">
+        <div class="col">
+          <br>
+            <input type="text" name="fname" id="fsname" class="form-control" placeholder="First" required>
+            
+            <div class="invalid-feedback">
+                Please Enter your name
+            </div>
+        </div>
+        <div class="col"><br>
+            <input type="text" class="form-control" name="lsname" id="lname" placeholder="Last" required>
+            <div class="invalid-feedback">
+                Please Enter your last
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+            <label for="email" class="form-label fw-bold"></label>
+            <input type="email" id="emails" class="form-control" placeholder="Reference email" required>
+            <div class="invalid-feedback">
+                Please enter your email
+            </div>
+        </div>
+      </div>
+<!--button---->
+
+          <div class="form-button-container">
+            <input type="submit" value="Register">
+            <input type="reset">
+          </div>
+      
+      </div>
+  </form>
+</div>
+
+
+
+
+  <!-- footer -->
+<section class="news py-3">
+  <div class="container py-3">
+    <div class="row">
+      <div class="col-lg-9 m-auto text-center">
+        <h1> Join Our Ninja Hideout</h1>
+        <input type="text" class="px-3" placeholder="Enter your email here">
+        <button class="hbtn">submit</button>
+      </div>
+    </div>
+  <div class="row pt-lg-4">
+    <div class="col-lg-11">
+      <div class="row">
+        <div class="col-md-3">
+          <h5 >Locations</h5>
+          <P> Burlongan</P>
+          <P> Bayate </P>
+          <P> Ambling </P>
+        </div>
+        <div class="col-lg-3">
+          <h5> Visit Us</h5>
+          <P> Brgy Malaking Ambling, Magdalena Laguna</P>
+        </div>
+        <div class="col-lg-3">
+          <h5> Operation Hours</h5>
+          <P> Sun-Mon 7am-9pm</P>
+        </div>
+        <div class="col-lg-3">
+          <h5 class="pb-3"> Follow us :</h5>
+          <span><i class="fa-brands fa-facebook"></i></span>
+          <span><i class="fa-brands fa-instagram"></i></span>
+          <span><i class="fa-brands fa-twitter"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <p class="text-center">copyright ©2023 Ninja Grocer. All rights reserved. </p>
+  </div>
+  </section>
+  <!--End of footer -->
+  !----internal JS-->
+  <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function () {
+      'use strict'
+    
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+    
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+    
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+  </script>
+</body>
+</html
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -15,6 +15,9 @@ font-family: 'Jost', sans-serif;
 font-family: 'Roboto Slab', serif;;
 scroll-behavior: smooth;
 }
+body{
+  overflow-x: hidden;
+}
 /* NavBar */
 .nav-item a{
   text-decoration: none;

@@ -85,21 +85,18 @@ color: var(--accent-color);
   box-shadow: none;}
 
 
-  .container {
- 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-}
-
 .login {
     width: 360px;
     height: min-content;
     padding: 20px;
     border-radius: 12px;
     background: #ffffff;
+    align-items: center;
+    margin: 0 auto;
 }
+
+
+
 
 .login h1 {
     font-size: 36px;
@@ -156,4 +153,28 @@ color: var(--accent-color);
   padding-right:5px;
 }
 
+.form-button-container input{
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  color: rgb(209, 209, 209);
+  background: rgba(63,114,76,0.7);
+}
 
+.form-button-container input:hover{
+  background: rgba(56,204,93,0.7);
+  color: rgb(255, 255, 255);
+}
+  
+.alert p{
+  color: rgba(255, 255, 255, 0.532);
+}
+
+.alert a{
+  color: rgb(17, 195, 31);
+  text-decoration: none;
+}
