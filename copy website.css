@@ -206,6 +206,20 @@ color:var(--primary-color)
 .product h6{
   color: red;
 }
+
+.star{
+  text-align: end;
+  color: orange;
+}
+.pcard .card-body{
+  border: 1px dashed rgb(190,185,185);
+
+}
+
+.card-body{
+width:100% ;}
+
+
 .btn3{
   height: 45px;
   width: 35%;
