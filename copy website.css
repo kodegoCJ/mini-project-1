@@ -409,6 +409,10 @@ width: 100%;
   .news::placeholder{
     color: white;
   }
+  .my-Company a{
+    text-decoration: none;
+    color: white;
+  }
   .news p{
     margin: 0;
   }

@@ -103,7 +103,11 @@ color: var(--accent-color);
   cursor: pointer;
 }
 
-
+.my-sidebar{
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
 
 
  /* footer */

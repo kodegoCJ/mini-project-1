@@ -67,7 +67,7 @@
     <div class="container py-5">
       <div class="row py-5">
         <div class="col-lg-6 py-5">
-          <p class="m-0"> Ninja Promis </p>
+          <p class="m-0"> Ninja promise </p>
           <h1> Fresh & Organic</h1>
           <div class="line"></div>
           <p>Organic food are food and drinks by methods complying the standards of organic farming. Standards vary
@@ -346,15 +346,15 @@
         </div>
         <div class="col-lg-3 mt-2">
           <a href="Customer care.html">
-          <div class="card py-3">
-            <div class="card-body">
-              <span class=""><i class="bi bi-wallet2"></i></span>
-              <h5 class="head1">Secure payment</h5>
-              <p class per1>We provide invoice silps and credit encripted to your email so we can ensure the safety of
-                your account details .</p>
+            <div class="card py-3">
+              <div class="card-body">
+                <span class=""><i class="bi bi-wallet2"></i></span>
+                <h5 class="head1">Secure payment</h5>
+                <p class per1>We provide invoice silps and credit encripted to your email so we can ensure the safety of
+                  your account details .</p>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
         </div>
 
         <div class="col-lg-3 mt-2">
@@ -431,8 +431,7 @@
                     rows="5"></textarea>
                 </div>
               </div>
-              <button class="cbtn1 px-3">submit
-                <a href="#"></a>
+              <button class="cbtn1" px-3 data-bs-toggle="modal" data-bs-target="#exampleModal">submit
               </button>
             </div>
           </div>
@@ -449,21 +448,22 @@
         <div class="col-lg-5 m-auto text-center">
           <h1> Join Our Ninja Hideout</h1>
           <input type="text" class="px-3" placeholder="Enter your email here">
-          <button class="hbtn">submit</button>
+          <button class="hbtn" data-bs-toggle="modal" data-bs-target="#exampleModal2">submit</button>
         </div>
       </div>
+
       <div class="row pt-4">
         <div class="col">
-          <div class="row">
-            <div class="col-3">
-              <h5>Locations</h5>
-              <P> Burlongan</P>
-              <P> Bayate </P>
-              <P> Ambling </P>
+          <div class="row my-Company">
+            <div class="col-3 ">
+              <h5>Company: </h5>
+              <P><a href="about.html">About Us</a></P>
+              <P><a href="Customer care.html">Support</a></P>
             </div>
             <div class="col-3">
               <h5> Visit Us</h5>
               <P> Brgy Malaking Ambling, Magdalena Laguna</P>
+              <p>09315546181/0955684225</p>
             </div>
             <div class="col-3">
               <h5> Operation Hours</h5>
@@ -483,7 +483,41 @@
     </div>
   </section>
   <!--End of footer -->
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">message</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          A response has been submmited!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
+   <!-- Modal2 -->
+   <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel2">message</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Your email has been succesfully submmited!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
