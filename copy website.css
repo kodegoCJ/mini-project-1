@@ -89,7 +89,7 @@ color: var(--accent-color);
 }
 /* main */
 .main{
-  background: url(/main/m1.jpg)no-repeat;
+  background: url(./main/m1.jpg)no-repeat;
   background-size: cover;
   height: 100vh;
   width: 100%;
