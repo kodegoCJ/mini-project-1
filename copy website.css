@@ -510,3 +510,7 @@ p {
   cursor: pointer;
   padding-right: 5px;
 }
+
+.news .container{
+  min-width: 380px;
+}
