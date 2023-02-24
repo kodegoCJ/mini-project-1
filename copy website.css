@@ -1,263 +1,313 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@500&family=Jost:ital@1&family=Roboto+Slab:wght@400;500&display=swap');
 
-:root{
+:root {
   --primary-color: rgb(20, 219, 20);
-  --accent-color:rgb(13, 173, 13);
+  --accent-color: rgb(13, 173, 13);
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Cedarville Cursive', cursive;
-font-family: 'Dancing Script', cursive;
-font-family: 'Jost', sans-serif;
-font-family: 'Roboto Slab', serif;;
-scroll-behavior: smooth;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Jost', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  ;
+  scroll-behavior: smooth;
 }
-body{
+
+body {
   overflow-x: hidden;
 }
+
 /* NavBar */
-.nav-item a{
+.nav-item a {
   text-decoration: none;
   color: black;
   font-weight: 600;
   text-transform: uppercase;
   margin-right: 15px;
+  transition: all 0.4s;
+}
+
+.nav-item a:hover {
+  color: rgb(12, 79, 37);
 }
 
 
-.navbar-brand img{
+.navbar-brand img {
   width: 150px;
 }
-.search{
+
+.search {
   height: 45px;
   outline: none;
-  border: 2px solid var(--primary-color);
+  border: 2px solid rgb(24, 134, 64);
   background-color: transparent;
   border-radius: 20px 0px 0px 20px;
 
 }
-.btn1{
+
+.btn1 {
   height: 45px;
   outline: none;
-  border:none;
-  background-color:var(--primary-color);
+  border: none;
+  background-color: rgb(24, 134, 64);
   color: white;
   border-radius: 0px 20px 20px 0px;
   transition: all 0.4s;
   margin-inline-end: 2px;
 }
 
-.btn1:hover{
+.btn1:hover {
   opacity: 0.8;
   color: white;
-  border: 4px solid rgb(12, 79, 37);
+  border: 4px solid rgb(15, 96, 45);
 }
 
-.bi-cart3{
-font-size: 30px;
-color: black;
-cursor: pointer;
-padding-top: 5px;
-transition: all 0.4s;
-}
-.bi-cart3:hover{
-color: var(--accent-color);
-}
-
-.bi-person-circle{
+.bi-cart3 {
   font-size: 30px;
   color: black;
   cursor: pointer;
   padding-top: 5px;
   transition: all 0.4s;
-  margin-left:20px;
-  }
-  .bi-person-circle:hover{
-  color: var(--accent-color);
 }
 
-.navbar-toggler{
+.bi-cart3:hover {
+  color: rgb(24, 134, 64);
+}
+
+.bi-person-circle {
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+  padding-top: 5px;
+  transition: all 0.4s;
+  margin-left: 20px;
+}
+
+.bi-person-circle:hover {
+  color: rgb(24, 134, 64);
+}
+
+.navbar-toggler {
   font-size: 20px;
   color: black;
 }
-.navbar-toggler:focus{
+
+.navbar-toggler:focus {
   outline: none;
   box-shadow: none;
 }
+
 /* main */
-.main{
+.main {
   background: url(./main/m1.jpg)no-repeat;
   background-size: cover;
   height: 100vh;
   width: 100%;
 }
-.main h1{
+
+.main h1 {
   font-size: 5rem;
 }
-.main p:nth-child(1){
- font-size: 10px;
- font-weight: 500;
+
+.main p:nth-child(1) {
+  font-size: 10px;
+  font-weight: 500;
 }
-.main p:nth-child(2){
+
+.main p:nth-child(2) {
   font-size: 18px;
   color: gray;
 }
-.mbtn1{
+
+.mbtn1 {
   height: 50px;
   width: 25%;
   outline: none;
   border: none;
   color: white;
-  background:var(--primary-color);
+  background: rgb(24, 134, 64);
   border-radius: 50px;
   transition: all 0.4s;
 }
-.mbtn1 a{
+
+.mbtn1 a {
   text-decoration: none;
-  color:white;
+  color: white;
 }
 
-.mbtn1:hover{
+.mbtn1:hover {
   opacity: 0.8;
   color: white;
   border: 4px solid rgb(12, 79, 37);
 }
-.mbtn2{
+
+.mbtn2 {
   height: 50px;
   width: 25%;
   outline: none;
   background-color: transparent;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  color: rgb(24, 134, 64);
+  border: 1px solid rgb(24, 134, 64);
   border-radius: 50px;
-  transition: all0.4s;
+  transition: all 0.4s;
 }
-.mbtn2:hover{
+
+.mbtn2:hover {
   opacity: 0.8;
   color: white;
   border: 4px solid rgb(12, 79, 37);
 }
 
-.mbtn2 a{
+.mbtn2 a {
   text-decoration: none;
-  color:rgb(12, 79, 37);
+  color: rgb(12, 79, 37);
 }
 
-.line{
+.line {
   height: 6px;
   width: 100px;
   background: var(--primary-color);
   display: inline-block;
 }
+
 /* about */
-.about{
-background:url(main/grocery-store-asian-delivery-man-holding-food-basket-on-blur-white-banner-background.png)no-repeat;
-background-size: cover;
-height: 90vh;
-width:100% ;
+.about {
+  background: url('/main/240_F_221924701_wcMNug021KgQFWEB1dO9PCElhHPxZTWL.png')no-repeat;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
 
 }
-.about h1{
+
+.about h1 {
   font-size: 3rem;
   font-weight: 400;
 }
-.about p:nth-child(1){
- font-size: 10px;
- font-weight: 500;
+
+.about p:nth-child(1) {
+  font-size: 10px;
+  font-weight: 500;
 }
-.about p:nth-child(2){
+
+.about p:nth-child(2) {
   font-size: 18px;
   color: gray;
 }
+
 /* welcome */
-.welcome{
+.welcome {
   background-color: var(--accent-color)
 }
 
-.line2{
+.line2 {
   height: 6px;
   width: 30%;
   background-color: white;
-  display:inline-block;
-}
-.welcome h2{
-font-size: 5rem;
-font-weight: 400;
+  display: inline-block;
 }
 
-.welcome .card{
-  border:none;
+.welcome h2 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+.welcome .card {
+  border: none;
   border-radius: 0;
   cursor: pointer;
 }
 
-.welcome i{
-font-size: 45px;
-color:var(--primary-color)
+.welcome i {
+  font-size: 45px;
+  color: var(--primary-color)
 }
-.welcome h1{
+
+.welcome h1 {
   font-weight: lighter;
-  padding:10px 0px ;
+  padding: 10px 0px;
 }
+
 /* product */
-.product h2{
+.product h2 {
   font-weight: 700;
 }
-.product h6{
+
+.product h6 {
   color: red;
 }
 
-.star{
+.star {
   text-align: end;
   color: orange;
 }
-.pcard .card-body{
-  border: 1px dashed rgb(190,185,185);
+
+.product .pcard {
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
 
 }
 
-.card-body{
-width:100% ;}
+.product .card-body {
+  border: 1px dashed rgb(168, 162, 162);
+
+}
+
+.head1 {
+  font-weight: 400;
+  margin: 0;
+}
+
+.per1 {
+  color: rgb(168, 162, 162);
+}
 
 
-.btn3{
-  height: 45px;
-  width: 35%;
+
+.btn3 {
+  height: 50px;
+  width: 50%;
   border: none;
   outline: none;
-  background-color: var(--primary-color);
+  background-color: rgb(24, 134, 64);
   color: white;
-  font-weight: 700;
-  border-radius: 60px;
+  border-radius: 50px;
+  margin: 0 auto;
+  display: block;
+  transition: all 0.4s;
 }
 
-.btn3 a{
+.btn3 a {
   text-decoration: none;
-  color:white;
+  color: white;
 }
-.btn3:hover{
+
+.btn3:hover {
+  outline: none;
   opacity: 0.8;
   color: white;
   border: 4px solid rgb(12, 79, 37);
 }
 
-.pcard:hover{
-  box-shadow: -3px -1px 24px -5px rgba(0,0,0,0.75);
-  -webkit-box-shadow: -3px -1px 24px -5px rgba(0,0,0,0.75);
-  -moz-box-shadow: -3px -1px 24px -5px rgba(0,0,0,0.75);
-  transition: 0.5s; 
+.pcard:hover {
+  box-shadow: -3px -1px 24px -5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -3px -1px 24px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -3px -1px 24px -5px rgba(0, 0, 0, 0.75);
+  transition: 0.5s;
 }
 
 /* discount */
-.discount{
-  background:var(--accent-color);
+.discount {
+  background: var(--accent-color);
   color: white;
   height: 25vh;
 }
-.dbtn{
+
+.dbtn {
   height: 50px;
   width: 75%;
   outline: none;
@@ -270,12 +320,15 @@ width:100% ;}
   font-weight: lighter;
   transition: all 0.4s;
 }
-.dbtn a{
+
+.dbtn a {
   text-decoration: none;
-  color:rgb(12, 79, 37);
+  color: rgb(24, 134, 64);
 }
 
-.dbtn:hover{
+
+
+.dbtn:hover {
   opacity: 0.8;
   color: white;
   border: 4px solid rgb(12, 79, 37);
@@ -283,141 +336,177 @@ width:100% ;}
 
 
 /* shop */
-.shop h2{
+.shop h2 {
   font-weight: 700;
 }
 
-.shop h6{
-    color: red;
+.shop h6 {
+  color: red;
 }
+
 /* store */
-.store h2{
+.store h2 {
   font-size: 3rem;
   font-weight: bold;
 }
-.store p:nth-child(1){
- font-size: 10px;
- font-weight: 500;
+
+.store p:nth-child(1) {
+  font-size: 10px;
+  font-weight: 500;
 }
-.store p:nth-child(2){
+
+.store p:nth-child(2) {
   font-size: 18px;
   color: gray;
 }
 
-.store i{
+.store i {
   font-size: 45px;
-  align-items:center;
+  align-items: center;
 }
 
-.store .card{
+.store .card {
   border-radius: 0;
   border: none;
   transition: all 0.3s;
   cursor: pointer;
 }
 
-.store .card:hover{
-  background-color:var(--primary-color);
+.store .card:hover {
+  background-color: rgb(35, 175, 87);
   color: white;
 
 }
-.store .card:hover .per1{
+
+.store .card:hover .per1 {
   color: white;
 }
-.store  a {
+
+.store a {
   text-decoration: none;
   color: black;
 }
 
 /* section 2 */
-.apple{
-  background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('./main/portrait-of-beautiful-young-woman-with-green-apple-isolated-on-white-background-blank-copy.png')no-repeat;
-background-size: cover;
-height: 80vh;
-width: 100%;
+.apple {
+  background: url('https://media.istockphoto.com/id/1416912309/photo/cherry-tomatoes-in-a-metal-shopping-trolley-on-a-background-of-light-wooden-boards.jpg?s=612x612&w=0&k=20&c=YsLwdC8c6_Azo0VNNI4CPDaqD8A2gyWYVLRgYJRcJgM=');
+  color: rgb(12, 79, 37);
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
 }
 
-.sbtn1{
+.apple h1,
+p {
+  color: rgb(12, 79, 37);
+}
+
+.sbtn1 {
   height: 50px;
   width: 35%;
   outline: none;
   border: none;
   color: black;
-  background-color:var(--accent-color);
+  background-color: rgb(24, 134, 64);
+  ;
   border-radius: 50px;
   margin: 0 auto;
   display: block;
   font-weight: lighter;
   transition: all 0.4s;
 }
-.sbtn1 a{
+
+.sbtn1 a {
   text-decoration: none;
-  color:white;
+  color: white;
 }
-.sbtn1:hover{
+
+.sbtn1:hover {
   opacity: 0.8;
   color: white;
   border: 4px solid rgb(12, 79, 37);
 }
+
 /* Contact us */
-.contact h1{
+.contact h1 {
   color: #000;
   font-weight: 600;
   font-size: 45px;
 }
-.cbtn1{
-    height: 50px;
-    width: 35%;
-    outline: none;
-    border: none;
-    color: white;
-    background-color:var(--accent-color);
-    border-radius: 50px;
-    margin: 0 auto;
-    display: block;
-    font-weight: lighter;
-    transition: all 0.4s;
-  }
-.cbtn1:hover{
-    opacity: 0.8;
-    color: white;
-    border: 4px solid rgb(12, 79, 37);
-  }
-  /* footer */
-  .news{
-    background-color:rgb(12, 79, 37);
-    color: whitesmoke;
-  }
-  .hbtn{
-    height: 45px;
-    width: 100px;
-    background: white;
-    margin-left: -10px;
-    border:  2px solid white;
-    font-weight: 600;  
-  }
-  .news input{
-    height: 45px;
-    width: 55%;
-    border: 2px solid white;
-    outline: none;
-    background:rgb(12, 79, 37);
-    color: white;
-    margin-top: 20px;
-    font-weight: 600;
-  }
-  .news::placeholder{
-    color: white;
-  }
-  .my-Company a{
-    text-decoration: none;
-    color: white;
-  }
-  .news p{
-    margin: 0;
-  }
-  .fa-brands{
-    font-size: 2.5rem;
-    cursor: pointer;
-    padding-right:5px;
-  }
+
+.cbtn1 {
+  height: 50px;
+  width: 35%;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: rgb(24, 134, 64);
+  ;
+  border-radius: 50px;
+  margin: 0 auto;
+  display: block;
+  font-weight: lighter;
+  transition: all 0.4s;
+}
+
+.cbtn1:hover {
+  opacity: 0.8;
+  color: white;
+  border: 4px solid rgb(12, 79, 37);
+}
+
+/* footer */
+.news {
+  background-color: rgb(12, 79, 37);
+  color: whitesmoke;
+}
+
+.hbtn {
+  height: 45px;
+  width: 100px;
+  background: white;
+  margin-left: -10px;
+  border: 2px solid white;
+  font-weight: 600;
+}
+
+.news input {
+  height: 45px;
+  width: 55%;
+  border: 2px solid white;
+  outline: none;
+  background: rgb(12, 79, 37);
+  color: rgba(255, 255, 255, 0.719);
+  font-style: normal;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.news::placeholder {
+  color: white;
+}
+
+.my-Company a {
+  text-decoration: none;
+  color: white;
+}
+
+.my-details p {
+  text-decoration: none;
+  color: white;
+}
+
+.my-hours p {
+  text-decoration: none;
+  color: white;
+}
+
+.news p {
+  margin: 0;
+}
+
+.fa-brands {
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding-right: 5px;
+}
