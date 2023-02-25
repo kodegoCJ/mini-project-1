@@ -176,7 +176,7 @@ body {
 
 /* about */
 .about {
-  background: url('/main/240_F_221924701_wcMNug021KgQFWEB1dO9PCElhHPxZTWL.png')no-repeat;
+  background: url('./main/240_F_221924701_wcMNug021KgQFWEB1dO9PCElhHPxZTWL.png')no-repeat;
   background-size: cover;
   height: 90vh;
   width: 100%;
