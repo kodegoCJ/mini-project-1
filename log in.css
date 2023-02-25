@@ -96,37 +96,144 @@
   box-shadow: none;
 }
 
-
-.login {
-  width: 360px;
-  height: min-content;
-  padding: 20px;
-  border-radius: 12px;
-  background: #ffffff;
-  align-items: center;
+/* login Form */
+body{
+  width: 100%;
+  height: 100vh;
+ ;
+ 
+}
+::selection{
+  color: #fff;
+ 
+}
+.wrapper{
+  width: 380px;
+  padding: 40px 30px 50px 30px;
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
   margin: 0 auto;
+  padding-bottom: 5rem;
 }
-
-
-
-
-.login h1 {
-  font-size: 36px;
-  margin-bottom: 25px;
+.wrapper header{
+  font-size: 35px;
+  font-weight: 600;
 }
-
-.login form {
-  font-size: 20px;
+.wrapper form{
+  margin: 40px 0;
 }
-
-.login form .form-group {
-  margin-bottom: 12px;
+form .field{
+  width: 100%;
+  margin-bottom: 20px;
 }
-
-.login form input[type="submit"] {
-  font-size: 20px;
-  margin-top: 15px;
+form .field.shake{
+  animation: shake 0.3s ease-in-out;
 }
+@keyframes shake {
+  0%, 100%{
+    margin-left: 0px;
+  }
+  20%, 80%{
+    margin-left: -12px;
+  }
+  40%, 60%{
+    margin-left: 12px;
+  }
+}
+form .field .input-area{
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+form input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 45px;
+  font-size: 18px;
+  background: none;
+  caret-color: #5372F0;
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  transition: all 0.2s ease;
+}
+form .field input:focus,
+form .field.valid input{
+  border-color: #5372F0;
+}
+form .field.shake input,
+form .field.error input{
+  border-color: #dc3545;
+}
+.field .input-area i{
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+.input-area .icon{
+  left: 15px;
+  color: #bfbfbf;
+  transition: color 0.2s ease;
+}
+.input-area .error-icon{
+  right: 15px;
+  color: #dc3545;
+}
+form input:focus ~ .icon,
+form .field.valid .icon{
+  color: #5372F0;
+}
+form .field.shake input:focus ~ .icon,
+form .field.error input:focus ~ .icon{
+  color: #bfbfbf;
+}
+form input::placeholder{
+  color: #bfbfbf;
+  font-size: 17px;
+}
+form .field .error-txt{
+  color: #dc3545;
+  text-align: left;
+  margin-top: 5px;
+}
+form .field .error{
+  display: none;
+}
+form .field.shake .error,
+form .field.error .error{
+  display: block;
+}
+form .pass-txt{
+  text-align: left;
+  margin-top: -10px;
+}
+.wrapper a{
+  color: rgba(63, 114, 76, 0.7);
+  text-decoration: none;
+}
+.wrapper a:hover{
+  text-decoration: none;
+}
+form input[type="submit"]{
+  height: 50px;
+  margin-top: 30px;
+  color: #fff;
+  padding: 0;
+  border: none;
+  background:rgb(15, 96, 45);
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  transition: all 0.3s ease;}
+
+form input[type="submit"]:hover{
+  opacity: 0.8;
+  color: white;
+  border: 4px solid rgb(15, 96, 45);}
 
 
 

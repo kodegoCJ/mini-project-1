@@ -13,7 +13,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="log in.css" />
   <!-- fontawesome -->
-  <script src="https://kit.fontawesome.com/3733990f22.js" crossorigin="anonymous"></script>
+  <!-- <script src="https://kit.fontawesome.com/3733990f22.js" crossorigin="anonymous"></script> -->
   <title> Log in</title>
 </head>
 
@@ -46,7 +46,7 @@
             <a class="nav-link" href="Customer care.html">support</a>
           </li>
         </ul>
-        <form class="d-flex">
+        <div class="d-flex">
           <input class="px-2 search" type="search" placeholder="Search" aria-label="Search">
           <button class="btn1 me-2 px-3" type="submit">Search</button>
           <span><a href="Shopping Cart.html"><i class="bi bi-cart3"></i></a></span>
@@ -55,46 +55,49 @@
 
 
 
-
-        </form>
+        </div>
       </div>
     </div>
   </nav>
-  <!-- End NavBar -->
-  <!-- End NavBar -->
-  <section class="Log-in ">```
-    <div class="container">
-      <div class="login">
-        <form class="needs-validation border shadow p-4">
+  <!--End NavBar-->
 
-          <div class="form-group was-validated">
-            <label class="form-label" for="email">Email address</label>
-            <input class="form-control" type="email" id="email" required />
-            <div class="invalid-feedback">
-              Please enter your email address
+    <!--LogIn-->
+
+  <section class="Log-in ">
+    <div class="container pb-5">
+      <div class="wrapper ">
+
+        <header>Login Form</header>
+        <form action="#">
+          <div class="field email">
+            <div class="input-area">
+              <input type="text" placeholder="Email Address">
+              <i class="icon fas fa-envelope"></i>
+              <i class="error error-icon fas fa-exclamation-circle"></i>
             </div>
+            <div class="error error-txt">Email can't be blank</div>
           </div>
-
-          <div class="form-group was-validated">
-            <label class="form-label" for="password">Password</label>
-            <input class="form-control" type="password" id="password" required />
-            <div class="invalid-feedback">Please enter your password</div>
+          <div class="field password">
+            <div class="input-area">
+              <input type="password" placeholder="Password">
+              <i class="icon fas fa-lock"></i>
+              <i class="error error-icon fas fa-exclamation-circle"></i>
+            </div>
+            <div class="error error-txt">Password can't be blank</div>
           </div>
-
-          <div class="form-group form-check">
-            <input class="form-check-input" type="checkbox" id="check" />
-            <label class="form-check-label" for="check">Remember me</label>
-            <hr />
-            <p>
-              Don't have an account?<a href="Sign up.html"> Sign Up</a> here
-            </p>
-          </div>
-          <input class="btn btn-success w-100" type="submit" value="SIGN IN" />
+          <div class="pass-txt"><a href="#">Forgot password?</a></div>
+          <input type="submit" value="Login">
         </form>
+        <div class="sign-txt">Not yet member? <a href="Sign up.html">Signup now</a></div>
+
       </div>
     </div>
   </section>
-  <!-- footer -->
+
+
+  <!---footer--->
+
+
   <section class="news py-3">
     <div class="container py-3">
       <div class="row">
@@ -128,15 +131,20 @@
               <span><i class="fa-brands fa-instagram"></i></span>
               <span><i class="fa-brands fa-twitter"></i></span>
             </div>
+
           </div>
         </div>
       </div>
+
       <hr>
+
       <p class="text-center">copyright ©2023 Ninja Grocer. All rights reserved. </p>
+
     </div>
   </section>
-  <!--End of footer -->
-  <!-- Modal -->
+  <!--End of footer-->
+
+  <!--Modal-->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -171,6 +179,54 @@
       </div>
     </div>
   </div>
+
+
+  <script>
+    const form = document.querySelector("form");
+eField = form.querySelector(".email"),
+eInput = eField.querySelector("input"),
+pField = form.querySelector(".password"),
+pInput = pField.querySelector("input");
+form.onsubmit = (e)=>{
+  e.preventDefault(); //preventing from form submitting
+  //if email and password is blank then add shake class in it else call specified function
+  (eInput.value == "") ? eField.classList.add("shake", "error") : checkEmail();
+  (pInput.value == "") ? pField.classList.add("shake", "error") : checkPass();
+  setTimeout(()=>{ //remove shake class after 500ms/0.5secs
+    eField.classList.remove("shake");
+    pField.classList.remove("shake");
+  }, 500);
+  eInput.onkeyup = ()=>{checkEmail();} //calling checkEmail function on email input keyup
+  pInput.onkeyup = ()=>{checkPass();} //calling checkPassword function on pass input keyup
+  function checkEmail(){ //checkEmail function
+    let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/; //pattern for validate email
+    if(!eInput.value.match(pattern)){ //if pattern not matched then add error and remove valid class
+      eField.classList.add("error");
+      eField.classList.remove("valid");
+      let errorTxt = eField.querySelector(".error-txt");
+      //if email value is not empty then show please enter valid email else show Email can't be blank
+      (eInput.value != "") ? errorTxt.innerText = "Enter a valid email address" : errorTxt.innerText = "Email can't be blank";
+    }else{ //if pattern matched then remove error and add valid class
+      eField.classList.remove("error");
+      eField.classList.add("valid");
+    }
+  }
+  function checkPass(){ //checkPass function
+    if(pInput.value == ""){ //if pass is empty then add error and remove valid class
+      pField.classList.add("error");
+      pField.classList.remove("valid");
+    }else{ //if pass is empty then remove error and add valid class
+      pField.classList.remove("error");
+      pField.classList.add("valid");
+    }
+  }
+  //if eField and pField doesn't contains error class that mean user filled details properly
+  if(!eField.classList.contains("error") && !pField.classList.contains("error")){
+    window.location.href = form.getAttribute("action"); //redirecting user to the specified url which is inside action attribute of form tag
+  }
+}
+  </script>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
