@@ -69,72 +69,103 @@
         <div class="row">
 
           <div class="col-3">
-            <div class="d-flex flex-column px-3 py-3 col-auto bg-success min-vh-100">
+            <div class="d-flex flex-column px-3 py-3 col-auto  min-vh-100">
               <di class="category">
-                <hr class="text-black"/>
-                <h5 class="text-center fw-normal flex-shrink-0">Categories</h5>
-                <hr class="text-black"/>
-                  <p>
-                    <a class="btn btn-outline-success" data-bs-toggle="collapse" href="#menu-one" role="button"
+                <hr>
+                <h5 class="text-center d-none d-sm-block">Categories</h5>
+                <h5 class="text-center d-block d-sm-none"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAMhJREFUSEvtluEJwjAQhb9uopOok9hOoqPoBjqBjtARHKU8aKGE2nq5aLAk/wKXfLl3L/AqMq0qE5cQvAGO/WOugPY75+Na4B7eEYL3wKMvOgDan5xgHb8AzfieX4HF3AKvAW4Bx/ghVPD5l2B1sWQ4GVOyJu34/IHhZEzJug6w5Xcl7TgbuJhrSvqvuDrbjAt4ToF1/OMy4zLjsQJJXG0x1VRtdNjzgBWF6rl4qwA/FCgLay+5PEuB/rYU6D0A09mYrGwCvCvuAKE+bh/hIHYqAAAAAElFTkSuQmCC"/></h5>
+                
+                <hr>
+                  <p class="my-collapse-item  d-none d-sm-block ">
+                    <a  data-bs-toggle="collapse" href="#menu-one" role="button"
                       aria-expanded="false" aria-controls="menu-one">
                       Beverages
                     </a>
+                    
+                    
                   </p>
-                  
-                <div class="collapse" id="menu-one">
-                  <div class="card card-body">
-                    <span><i></i></span>
+                  <p class="my-collapse-item  d-block d-sm-none  ">
+                    <a  data-bs-toggle="collapse" href="#menu-one" role="button"
+                      aria-expanded="false" aria-controls="menu-one">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bottle" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M10 5h4v-2a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v2z" />
+                        <path d="M14 3.5c0 1.626 .507 3.212 1.45 4.537l.05 .07a8.093 8.093 0 0 1 1.5 4.694v6.199a2 2 0 0 1 -2 2h-6a2 2 0 0 1 -2 -2v-6.2c0 -1.682 .524 -3.322 1.5 -4.693l.05 -.07a7.823 7.823 0 0 0 1.45 -4.537" />
+                        <path d="M7.003 14.803a2.4 2.4 0 0 0 .997 -.803a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 1 -.805" />
+                      </svg>
+                    </a>
+                    
+                    
+                  </p>
+                <ul class=" list-group collapse" id="menu-one">
+                  <li class="list-group-item">
                     <a href="category - Choco Drink.html">Choco Drink</a>
-                  </div>
-                  <div class="card card-body">
-                    <span><i></i></span>
+                  </li>
+                  <li class="list-group-item">
                     <a href="category - Choco powder.html">Choco Powder</a>
-                  </div>
-                </div>
+                  </li>
+                </ul>
 
 
-                <p>
-                  <a class="btn btn-outline-success" data-bs-toggle="collapse" href="#menu-two" role="button"
+                <p class="my-collapse-item d-none d-sm-block ">
+                  <a data-bs-toggle="collapse" href="#menu-two" role="button"
                     aria-expanded="false" aria-controls="menu-two">
                     Biscuits
                   </a>
                 </p>
-                <div class="collapse" id="menu-two">
-                  <div class="card card-body">
+                
+                <p class="my-collapse-item d-block d-sm-none ">
+                  <a data-bs-toggle="collapse" href="#menu-two" role="button"
+                    aria-expanded="false" aria-controls="menu-two">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAo5JREFUSEvFlrnyTFEQxn9/ua1KbsmUABGR7QEsT4CElExkS4SIFAmewPIAtogIgRQPIKA8APWr6p7qe+fcZSaZjmbO7dPf6a+/7nO22JBtbQiXdYBPAXuB38CrdQ8+F1iwi8ClHtDc/Uvnm9q4C3gKnB/IbGr/ICFjG48AbwHB094DPyN713YH5SszPgTcB7WWt4EvgLR7IO0y8GxlVGiKywx/lEyfN2qrsHZGtkeDhZXwWxm/A042MnLtG/Arav4ifDyEWbsvy+JhR60PXGm0nv7XPgLHgL/AiaBc6m8NRJcFyzJbXC+Bc+Gdm83UbNIEuxt/PJgHSIbS5wJgrNnA/8Kz1nUP8B3YHt882OtGxMpWSxedLZXqMbWq8rNBX4K21ipjo1lXYKeSw0I7Xeg140OANU8bYsFBk6LTN0WnABXeQnQVuIolB4NZfQiaPwHHA3ms7mOiuw48MMYQcK7fBO6UTC1HZt5SerrqJ8DhnhaM5cE6wJWmVLR1zRvIVjoQfZzxam8PKbiWcFH3OeISXMoV1VhvDvk1tdMfIDkKzXLoRjoI7ACsedoYMwrMK/VPvXD6wOlkwP2NGXwFeBxoT4Cr8XtIC/ti7uvW6e0+sJR+jmD2pDWp9iZazTWHzbb4OKT+2tedRFqXRM16If8AuAfciN9ejWd6vV37vdZ2aZK1gG10ReS7SrsGPCwA0q3Po7g0Wmp2z/348DUuG/WzsLGHgBeDd64mZWbv62PMrKmAKUwFZU8vdcPU00fAzDwP4JpZZDDr66AQoD4G9fF/swWnHmtS6gSyHVYxayrdHXrnUN0HkUJHnRQm/X0faZUN/aZKsvaDXiakWJNKM6uPhUl2pqieDLCuw8aA/wMmmJwf5+6yjgAAAABJRU5ErkJggg=="/>
+                  </a>
+                </p>
+                <ul class="list-group collapse" id="menu-two">
+                  <li class="list-group-item">
                     <span><i></i></span>
-                    <a href="">Chip Cookie</a>
-                  </div>
-                  <div class="card card-body">
+                    <a href="Category - Chip Cookies.html">Chip Cookie</a>
+                  </li>
+                  <li class="list-group-item">
                     <span><i></i></span>
-                    <a href="">Crackers</a>
-                  </div>
-                  <div class="card card-body">
+                    <a href="Category - Crackers.html">Crackers</a>
+                  </li>
+                  <li class="list-group-item">
                     <span><i></i></span>
-                    <a href="">Native Biscuits</a>
-                  </div>
+                    <a href="Category - Naitve Biscuits.html">Native Biscuits</a>
+                  </li>
 
-                  <div class="card card-body">
+                  <li class="list-group-item">
                     <span><i></i></span>
-                    <a href="">Pail Biscuits</a>
-                  </div>
-                  <div class="card card-body">
+                    <a href="Category - Pail Biscuts .html">Pail Biscuits</a>
+                  </li>
+                  <li class="list-group-item">
                     <span><i></i></span>
-                    <a href="">Sandwich Biscuits</a>
-                  </div>
-                  <div class="card card-body">
+                    <a href="Category - Sandwich Biscuits.html">Sandwich Biscuits</a>
+                  </li>
+                  <li class="list-group-item">
                     <span><i></i></span>
-                    <a href="">Sticks and shapes</a>
-                  </div>
-                  <div class="card card-body">
+                    <a href="Category - Sticks and Shapes.html">Sticks and shapes</a>
+                  </li>
+                  <li class="list-group-item">
                     <span><i></i></span>
-                    <a href="">wafers</a>
-                  </div>
-                </div>
+                    <a href="Category - Waffers.html">wafers</a>
+                  </li>
+                </ul>
 
-                <p>
-                  <a class="btn btn-outline-success" data-bs-toggle="collapse" href="#menu-three" role="button"
+                <p class="my-collapse-item d-none d-sm-block">
+                  <a  data-bs-toggle="collapse" href="#menu-three" role="button"
                     aria-expanded="false" aria-controls="menu-three">
                     Bread,Spread & Bakery snacks
+                  </a>
+                </p>
+
+                <p class="my-collapse-item d-block d-sm-none">
+                  <a  data-bs-toggle="collapse" href="#menu-three" role="button"
+                    aria-expanded="false" aria-controls="menu-three">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bread" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M17 5a3 3 0 0 1 2 5.235v6.765a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6.764a3 3 0 0 1 1.824 -5.231l.176 -.005h10z" />
+                    </svg>
                   </a>
                 </p>
 
@@ -166,10 +197,17 @@
                   </div>
                 </div>
 
-                <p>
-                  <a class="btn btn-outline-success" data-bs-toggle="collapse" href="#menu-four" role="button"
+                <p class="my-collapse-item d-none d-sm-block ">
+                  <a data-bs-toggle="collapse" href="#menu-four" role="button"
                     aria-expanded="false" aria-controls="menu-four">
                     Breakfast
+                  </a>
+                </p>
+
+                <p class="my-collapse-item d-block d-sm-none ">
+                  <a data-bs-toggle="collapse" href="#menu-four" role="button"
+                    aria-expanded="false" aria-controls="menu-four">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAbhJREFUSEvFl+01REEMhp+tgA5QASpABagAFaASVIAK6MCqABWgAzpw3j3JPdlr7p3sjmPn155skmeSycfuhBWdyYq4jIFPgQ3gE7izC2Zl1XjGwFNgD3gG9s1TVtYEVpQnwAewZZ6ysibwBXBlHo6BRyArawKvA6/2zl8h6oxM+qOnVtVHwIN5uAdUXHrvp4SsCSxjf1d99otmZYPwWsQyjFHvWvqzsiZwTO0BoJbKyprAKrId86DCUuFkZSmwnB0Cm7WKXPJ7XVgFOqv4+MaxR5f0XTU78/H73+BL4LofcSwYr95qCAkF1ceL6XlxzqU6grubJRzXVOITFsFyoIdfs5aR0l8c32jf1g0zn/0Bovyf99PSQI9ZvLElUwSrld4NpJu2Ru3RyqVWq1ZsESxhnMP6rBZY5kQ/vmA6P0OzWhNq27S0hwWvrjrT1yC6tRkv0VuYfFWwjJUmhwsquC4xdrQ8BJW9Q/XOvy49tp1krGLTzx8/Y/0d+1X6Sq9aqZipzFos9mEh7IXmQAYcHWaLrBsUQwYZcD+FGfhc65QMMmDZqWh8J9fA6lX/AzComwXXYAt/vzLwDwlGcx8VuGM2AAAAAElFTkSuQmCC"/>
                   </a>
                 </p>
                 <div class="collapse" id="menu-four">
@@ -187,10 +225,16 @@
                   </div>
                 </div>
 
-                <p>
-                  <a class="btn-outline-success" data-bs-toggle="collapse" href="#menu-payb" role="button"
+                <p class="my-collapse-item d-none d-sm-block ">
+                  <a data-bs-toggle="collapse" href="#menu-payb" role="button"
                     aria-expanded="false" aria-controls="menu-payb">
                     Baking
+                  </a>
+                </p>
+                <p class="my-collapse-item d-block d-sm-none ">
+                  <a data-bs-toggle="collapse" href="#menu-payb" role="button"
+                    aria-expanded="false" aria-controls="menu-payb">
+                    <img src="./bakery.png" class="img-fluid" alt="">
                   </a>
                 </p>
                 <div class="collapse" id="menu-payb">
@@ -209,10 +253,16 @@
                   </div>
                 </div>
 
-                <p>
-                  <a class="btn btn-outline-success" data-bs-toggle="collapse" href="#menu-six" role="button"
+                <p class="my-collapse-item d-none d-sm-block ">
+                  <a  data-bs-toggle="collapse" href="#menu-six" role="button"
                     aria-expanded="false" aria-controls="menu-six">
                     Canned And Dried Goods
+                  </a>
+                </p>
+                <p class="my-collapse-item d-block d-sm-none ">
+                  <a  data-bs-toggle="collapse" href="#menu-six" role="button"
+                    aria-expanded="false" aria-controls="menu-six">
+                   <img src="./food-and-restaurant.png" class="img-fluid "alt="">
                   </a>
                 </p>
                 <div class="collapse" id="menu-six">
@@ -247,10 +297,16 @@
 
 
 
-                <p>
-                  <a class="btn btn-outline-success" data-bs-toggle="collapse" href="#menu-seven" role="button"
+                <p class="my-collapse-item d-none d-sm-block ">
+                  <a  data-bs-toggle="collapse" href="#menu-seven" role="button"
                     aria-expanded="false" aria-controls="menu-seven">
                     Chips Nuts and More
+                  </a>
+                </p>
+                <p class="my-collapse-item d-block d-sm-none ">
+                  <a  data-bs-toggle="collapse" href="#menu-seven" role="button"
+                    aria-expanded="false" aria-controls="menu-seven">
+                    <img src="./potato-chips.png" class="img-fluid" alt="">
                   </a>
                 </p>
                 <div class="collapse" id="menu-seven">
@@ -280,10 +336,17 @@
 
 
 
-                <p>
-                  <a class="btn btn-outline-success" data-bs-toggle="collapse" href="#menu-eight" role="button"
+                <p class="my-collapse-item d-none d-sm-block ">
+                  <a data-bs-toggle="collapse" href="#menu-eight" role="button"
                     aria-expanded="false" aria-controls="menu-eight">
                     Chocolate, Candies and More
+                  </a>
+                </p>
+                <p class="my-collapse-item d-block d-sm-none ">
+                  <a data-bs-toggle="collapse" href="#menu-eight" role="button"
+                    aria-expanded="false" aria-controls="menu-eight">
+                    <img src="./chocolate-toffee.png" class="img-fluid" alt="">
+                  </a>
                   </a>
                 </p>
                 <div class="collapse" id="menu-eight">
@@ -301,10 +364,17 @@
                   </div>
                 </div>
 
-                <p>
-                  <a class="btn btn-outline-success" data-bs-toggle="collapse" href="#menu-nine" role="button"
+                <p class="my-collapse-item  d-none d-sm-block">
+                  <a  data-bs-toggle="collapse" href="#menu-nine" role="button"
                     aria-expanded="false" aria-controls="menu-nine">
                     Cooking aid
+                  </a>
+                </p>
+                <p class="my-collapse-item  d-block d-sm-none">
+                  <a  data-bs-toggle="collapse" href="#menu-nine" role="button"
+                    aria-expanded="false" aria-controls="menu-nine">
+                    <img src="./salt-and-pepper.png" class="img-fluid" alt="">
+                  </a>
                   </a>
                 </p>
                 <div class="collapse" id="menu-nine">
@@ -342,10 +412,16 @@
                   </div>
                 </div>
 
-                <p>
-                  <a class="btn-outline-success" data-bs-toggle="collapse" href="#menu-ten" role="button"
+                <p class="my-collapse-item  d-none d-sm-block">
+                  <a  data-bs-toggle="collapse" href="#menu-ten" role="button"
                     aria-expanded="false" aria-controls="menu-ten">
                     Fresh
+                  </a>
+                </p>
+                <p class="my-collapse-item  d-block d-sm-none">
+                  <a  data-bs-toggle="collapse" href="#menu-ten" role="button"
+                    aria-expanded="false" aria-controls="menu-ten">
+                    <img src="./tangerines.png" class="img-fluid" alt="">
                   </a>
                 </p>
                 <div class="collapse" id="menu-ten">
@@ -381,10 +457,16 @@
 
 
 
-                <p>
-                  <a class="btn-outline-success" data-bs-toggle="collapse" href="#menu-elevben" role="button"
+                <p class="my-collapse-item  d-none d-sm-block">
+                  <a  data-bs-toggle="collapse" href="#menu-elevben" role="button"
                     aria-expanded="false" aria-controls="menu-elevben">
                     Frozen Food
+                  </a>
+                </p>
+                <p class="my-collapse-item  d-block d-sm-none">
+                  <a  data-bs-toggle="collapse" href="#menu-elevben" role="button"
+                    aria-expanded="false" aria-controls="menu-elevben">
+                    <img src="./thaw.png" class="img-fluid" alt="">
                   </a>
                 </p>
                 <div class="collapse" id="menu-elevben">
@@ -423,11 +505,17 @@
                   </div>
                 </div>
 
-
-                <p>
-                  <a class="btn-outline-success" data-bs-toggle="collapse" href="#menu-twelb" role="button"
+                
+                <p class="my-collapse-item d-none d-sm-block ">
+                  <a  data-bs-toggle="collapse" href="#menu-twelb" role="button"
                     aria-expanded="false" aria-controls="menu-twelb">
                     Milk,Butter&More
+                  </a>
+                </p>
+                  <p class="my-collapse-item d-block d-sm-none ">
+                  <a  data-bs-toggle="collapse" href="#menu-twelb" role="button"
+                    aria-expanded="false" aria-controls="menu-twelb">
+                   <img src="./milk.png" class="img-fluid" alt="">
                   </a>
                 </p>
                 <div class="collapse" id="menu-twelb">
@@ -465,10 +553,16 @@
                   </div>
                 </div>
 
-                <p>
-                  <a class="btn-outline-success" data-bs-toggle="collapse" href="#menu-thirteen" role="button"
+                <p class="my-collapse-item d-none d-sm-block">
+                  <a  data-bs-toggle="collapse" href="#menu-thirteen" role="button"
                     aria-expanded="false" aria-controls="menu-thirteen">
                     Rice,Pasta,Noodles
+                  </a>
+                </p>
+                <p class="my-collapse-item d-block d-sm-none">
+                  <a  data-bs-toggle="collapse" href="#menu-thirteen" role="button"
+                    aria-expanded="false" aria-controls="menu-thirteen">
+                    <img src="./rice.png" class="img-fluid" alt="">
                   </a>
                 </p>
                 <div class="collapse" id="menu-thirteen">
@@ -494,11 +588,22 @@
                   </div>
                 </div>
 
-                <p>
-                  <a class="btn-outline-success" data-bs-toggle="collapse" href="#menu-fourteen" role="button"
+                <p class="my-collapse-item d-none d-sm-block">
+                  <a  data-bs-toggle="collapse" href="#menu-fourteen" role="button"
                     aria-expanded="false" aria-controls="menu-fourteen">
 
                     Wine & Beer
+                  </a>
+                </p>
+                
+                <p class="my-collapse-item d-block d-sm-none">
+                  <a  data-bs-toggle="collapse" href="#menu-fourteen" role="button"
+                    aria-expanded="false" aria-controls="menu-fourteen">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-beer" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                      <path d="M9 20h6v-4.111a8 8 0 0 1 .845 -3.578l.31 -.622a8 8 0 0 0 .845 -3.578v-4.111h-10v4.111a8 8 0 0 0 .845 3.578l.31 .622a8 8 0 0 1 .845 3.578v4.111z" />
+                      <path d="M7 8h10" />
+                    </svg>
                   </a>
                 </p>
                 <div class="collapse" id="menu-fourteen">
@@ -516,6 +621,8 @@
 
             </div>
           </div>
+
+
           <div class="col-9 bg-light my-content">
             <div class="row">
               <div class="col-lg-4 ">

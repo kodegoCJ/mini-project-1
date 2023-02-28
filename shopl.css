@@ -159,9 +159,22 @@ body {
   -moz-box-shadow: -3px -1px 24px -5px rgba(0, 0, 0, 0.75);
   transition: 0.5s;
 }
-.category{
-  border: 2px solid black;
+
+
+.my-collapse-item{
+  width: 100%;
+  padding: 8px 0;
+  height: 100%;
 }
+.my-collapse-item:hover {
+ background-color:  rgb(12, 79, 37);
+ color: #fff;
+}
+.my-collapse-item:hover a {
+  background-color:  rgb(12, 79, 37);
+  color: #fff;
+ }
+
 .category a {
   text-decoration: none;
   color:black;
