@@ -34,7 +34,6 @@ body {
   color: rgb(12, 79, 37);
 }
 
-
 .navbar-brand img {
   width: 150px;
 }
@@ -45,7 +44,6 @@ body {
   border: 2px solid rgb(24, 134, 64);
   background-color: transparent;
   border-radius: 20px 0px 0px 20px;
-
 }
 
 .btn1 {
@@ -100,11 +98,14 @@ body {
   box-shadow: none;
 }
 
-
-
 /* form */
 .c-card img{
   width:100px;
+}
+
+.my_forml{
+  margin: 0 auto !important;
+  width:600PX !important;
 }
 
 /* footer */

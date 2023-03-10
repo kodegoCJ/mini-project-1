@@ -103,7 +103,7 @@ body {
 
 /* main */
 .main {
-  background: url(./main/m1.jpg)no-repeat;
+  background: url(./main/m1.jpg);
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -122,6 +122,7 @@ body {
   font-size: 18px;
   color: gray;
 }
+
 
 .mbtn1 {
   height: 50px;
@@ -176,7 +177,7 @@ body {
 
 /* about */
 .about {
-  background: url('./main/240_F_221924701_wcMNug021KgQFWEB1dO9PCElhHPxZTWL.png')no-repeat;
+  background: url(./main/vege.png)no-repeat;
   background-size: cover;
   height: 90vh;
   width: 100%;
@@ -389,10 +390,10 @@ body {
 
 /* section 2 */
 .apple {
-  background: url('https://media.istockphoto.com/id/1416912309/photo/cherry-tomatoes-in-a-metal-shopping-trolley-on-a-background-of-light-wooden-boards.jpg?s=612x612&w=0&k=20&c=YsLwdC8c6_Azo0VNNI4CPDaqD8A2gyWYVLRgYJRcJgM=');
+  background: url('./main/pexels-photo-9603489.png');
   color: rgb(12, 79, 37);
   background-size: cover;
-  height: 80vh;
+  height: 70vh;
   width: 100%;
 }
 
